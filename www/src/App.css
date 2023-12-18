@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+.layout {
+  display: grid;
+  margin: 4ch;
+  gap: 4ch;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topicName {
+  font-weight: bold;
+  border-bottom: 1px solid #666;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.kafkaMessage {
+  border: 1px solid #ddd;
+  padding: 2ch;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.kafkaMessage .partition {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 20pt;
+  color: #ddd;
 }
